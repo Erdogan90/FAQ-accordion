@@ -63,3 +63,33 @@ button:hover{
     font-size: 4rem;
     font-weight: 700;
 }
+
+.faq-container .faq-question:not(:last-child){
+border-bottom: 2px solid var(--light-pink);
+}
+
+.faq-question .icon img{
+    min-width: 30px;
+}
+
+.faq-question .icon .minus-btn{
+display: none;
+}
+
+.faq-answer{
+    background-color: var(--white);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 200ms ease;
+}
+
+.faq-answer p {
+    color: var(--grayish-purple);
+    padding: 1.5rem 0;
+}
+
+@media (max-width: 540px) {
+    body {
+        background-image: url(assets/images/background-pattern-mobile.svg);
+    }
+}
